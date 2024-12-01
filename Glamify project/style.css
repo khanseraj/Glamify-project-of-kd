@@ -1,0 +1,479 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 10vh;
+}
+
+  
+.search-container input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border-right: 0;
+
+}
+  
+.search-container button {
+    width: auto;
+    height: 30px;
+    padding: 0 1.25rem;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+    border-left: 0;
+    cursor: pointer;
+    background-color: white;
+}
+  
+.search-container button:hover {
+    background: #ccc;
+}
+  
+@media screen and (max-width: 600px) {
+    .search-container input[type=text] {
+        width: 100%;
+        height: 30px;
+        padding: 0 1rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        border-right: 0;
+    
+    }
+      
+    .search-container button {
+        width: auto;
+        height: 30px;
+        padding: 0 1.25rem;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid black;
+        border-left: 0;
+        cursor: pointer;
+        background-color: white;
+    }
+      
+    .search-container button:hover {
+        background: #ccc;
+    }
+    
+}
+
+.carousel-item img{
+    height: 400px;
+    width: 100%;
+}
+@media screen and (max-width: 576px){
+    .carousel-item img{
+        height: 100px;
+        width: 100%;
+    }
+}
+
+/* card style */
+
+@keyframes changimage{
+    0%{background-image: url('images/images\ \(5\).jpeg');}
+    50%{background-image: url('images/images\ \(6\).jpeg');}
+    100%{background-image: url('images/images\ \(7\).jpeg');}
+
+}
+@keyframes changimage2{
+    0%{background-image: url('images/download.jpeg');}
+    50%{background-image: url('images/31VxnO0nedL.jpg');}
+    100%{background-image: url('images/images\ \(4\).jpeg');}
+
+}
+.card-container{
+    height: 300px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.card1{
+    height: 30vh;
+    width: 50%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    animation-name: changimage;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-position: center center;
+}
+.card2{
+    height: 30vh;
+    width: 50%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    animation-name: changimage2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-position: center center;
+}
+
+@media screen and (max-width: 576px){
+    .card-container{
+        height: 200px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card1{
+        height: 20vh;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 80% 100%;
+        animation-name: changimage;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        background-position: center center;
+    }
+    .card2{
+        height: 20vh;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 80% 100%;
+        animation-name: changimage2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        background-position: center center;
+    }
+
+}
+
+/* latest trand style */
+
+.trandcard{
+    width: 96%;
+    height: 80vh;
+    background-color: rgb(241, 234, 234);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -5%;
+    border-radius: 10px;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.dflex1{
+    margin-left: 3%;
+    padding-left: 3%;
+    margin-top: -10px;
+    width: 94%;
+}
+.hrdiv{
+    width: 94%;
+    margin-left: 3%;
+    padding-left: 3%;
+    margin-top: 2px;
+}
+.cards-feature{
+    width: 100%;
+    height: 20vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.cards-feature img{
+    width: 80%;
+    height: 15vh;
+    margin-top: 15px;
+    display: flex;
+    align-content: center;
+    margin-left: 10%;
+}
+.card-text{
+    margin-top: 15px;
+    width: 65%;
+}
+.dflex{
+    margin-left: 3%;
+    padding-left: 3%;
+    margin-top: -20px;
+    width: 94%;
+}
+@media screen and (max-width: 680px) {
+    .cards-feature{
+        width: 100%;
+        height: 16vh;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .cards-feature img{
+        width: 80%;
+        height: 10vh;
+        margin-top: 15px;
+        display: flex;
+        align-content: center;
+        margin-left: 10%;
+    }
+    .card-text h5{
+        font-size: 15px;
+    }
+    .card-text p{
+        font-size: 10px;
+    }
+    .trandcard{
+        width: 96%;
+        height: 65vh;
+        background-color: rgb(241, 234, 234);
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 10px;
+    }
+
+    .dflex{
+        margin-left: 3%;
+        padding-left: 3%;
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .hrdiv{
+    margin-left: 3%;
+    padding-left: 3%;
+    margin-top: 5px;
+}
+    
+}
+
+.card-container1{
+    height: 55vh;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -3%;
+    border-radius: 10px;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.card3{
+    height: 40vh;
+    width: 40%;
+    margin-top: -5%;
+}
+.card3 img{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.card4 img{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.card4{
+    width: 40%;
+    height: 40vh;
+    margin-top: -5%;
+    text-align: center;
+}
+.card4 p{
+    margin-top: -1%;
+    margin-left: 18%;
+    color: rgb(122, 5, 5);
+    font-size: 20px;
+}
+.card3 p{
+    margin-top: -1%;
+    margin-left: 16%;
+    color: rgb(122, 5, 5);
+    font-size: 20px;
+}
+.dflex2{
+    margin-left: 4%;
+    padding-left: 4%;
+    margin-top: -20px;
+    width: 94%;
+}
+.hrdiv2{
+    width: 93%;
+    margin-left: 5%;
+    padding-left: 3%;
+    margin-top: -2%;
+}
+
+@media screen and (max-width: 576px){
+    .card-container1{
+        height: 40vh;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .card3{
+        height: 30vh;
+        width: 50%;
+    }
+    .card4{
+        height: 30vh;
+        width: 50%;
+    }
+    .card3 p{
+        font-size: 15px;
+    }
+    .card4 p{
+        font-size: 15px;
+    }
+    .card4 img{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .card3 img{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .dflex2{
+        margin-left: 4%;
+        padding-left: 4%;
+        margin-top: -20px;
+        width: 94%;
+    }
+    .hrdiv2{
+        width: 93%;
+        margin-left: 5%;
+        padding-left: 3%;
+        margin-top: -7px;
+    }
+
+}
+@media screen and (max-width: 885px){
+    .card4 img{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .card3 img{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.h1para{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247, 174, 150);
+    font-family: "Sour Gummy", sans-serif;
+}
+.h1para h1{
+    font-size: 6rem;
+    margin-left: 10%;
+    color: white;
+}
+@media screen and (max-width: 750px){
+    .h1para{
+        height: 100vh;
+    }
+    .h1para h1{
+        font-size: 81px;
+    }
+}
+@media screen and (max-width: 576px){
+    .h1para{
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(247, 174, 150);
+    }
+    .h1para h1{
+        font-size: 3rem;
+        margin-left: 10%;
+        color: white;
+    }
+}
+@media screen and (max-width: 370px){
+    .h1para{
+        width: 100%;
+        height: 60vh;
+        background-color: blue;
+        border-radius: 10px;
+        font-family: "Sour Gummy", sans-serif;
+    }
+}
+@media screen and (max-width: 290px){
+    .h1para{
+        width: 100%;
+        height: 70vh;
+        background-color: blue;
+        border-radius: 10px;
+        font-family: "Sour Gummy", sans-serif;
+    }
+}
+
+.footer{
+    background-color: rgb(243, 210, 201);
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+}
+.shop a{
+    color: rgb(216, 133, 105);
+    text-decoration: none;
+    font-family: "Sour Gummy", sans-serif;
+    margin-bottom: 2%;
+}
+.shop{
+    margin-bottom: 2%;
+}
+.keep-in-touch{
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+.keep-in-touch a{
+    color: rgb(216, 133, 105);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Sour Gummy", sans-serif;
+}
+.customer-policies{
+    margin-bottom: 2%;
+}
+.customer-policies a{
+    text-decoration: none;
+    color: rgb(216, 133, 105);
+    font-family: "Sour Gummy", sans-serif;
+}
+.useful-link{
+    margin-bottom: 2%;
+}
+.useful-link a{
+    color: rgb(216, 133, 105);
+    text-decoration: none;
+    font-family: "Sour Gummy", sans-serif;
+}
+@media screen and (max-width: 450px){
+    .footer{
+        background-color: rgb(243, 210, 201);
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+    }
+}
